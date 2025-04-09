@@ -1,0 +1,84 @@
+.custom-navbar {
+  background-color: #4e674d !important;
+  font-family: 'Aeonik Pro', Arial, -apple-system, sans-serif;
+}
+
+.company-logo {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  padding-bottom: 20px;
+  transform: translateY(-20px);
+  animation: fadeInUp 2s forwards;
+}
+
+.navbar-nav.nav-adjust {
+  margin-left: auto;
+  padding-left: 200px;  /* ✅ Reduced for better balance on large screens */
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #4e6c4e00 !important;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 50px;  /* ✅ Fixed padding to avoid large shifting */
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  transform: translateY(-20px);
+  animation: fadeInUp 2s forwards;
+}
+
+.nav-item {
+  padding: 10px 20px;   /* ✅ Balanced padding */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+}
+
+/* ✅ Mobile stacked fullscreen effect */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #4e674dec;
+    padding: 20px;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-toggler {
+    color: #4e674d;
+    background-color: #4e674dc1;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;       
+    align-items: center;      
+  }
+
+  .navbar-nav .nav-link {
+    color: #ffffff !important;
+    padding-right: 0;  /* ✅ Remove excessive padding on mobile */
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

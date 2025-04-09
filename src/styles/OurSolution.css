@@ -1,0 +1,320 @@
+.solutions-container {
+  max-width: 90%;
+  margin: 100px auto;
+  height: 600px;
+  padding: 40px;
+  background-color: #5a915a8c;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.solutions-container2 {
+  max-width: 90%;
+  margin: 100px auto;
+  height: 600px;
+  padding: 40px;
+  background-color: #5a915a8c;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.Raitha-Sahaya {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 10%;
+  text-align: start;
+  position: relative;
+}
+.krishi-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: 1px;
+  text-align: start;
+  position: relative;
+}
+
+.Krishi-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: 10%;
+  text-align: end;
+  position: relative;
+}
+
+.raitha-content .solutions-title {
+  font-size: 42px;
+  color: #ffffff;
+  padding-bottom: 5%;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Krishi-connect .solutions-title {
+  font-size: 42px;
+  color: #ffffff;
+  padding-bottom: 5%;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.raitha-content h4 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Krishi-connect h4 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.raitha-content p {
+  font-size: 18px;
+  color: #e8f5e9;
+  line-height: 1.5;
+  max-width: 750px;
+}
+
+.Krishi-connect p {
+  font-size: 18px;
+  color: #e8f5e9;
+  line-height: 1.5;
+  max-width: 750px;
+}
+
+/* ✅ Desktop Image Absolute Position */
+.rs-app-img {
+  position: absolute;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+}
+.ks-app-img {
+  position: absolute;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+}
+.mobile-app-img {
+  display: none;
+  text-align: center;
+}
+
+.image1 {
+  height: 400px;
+  top: 10px;
+  right: 320px;
+}
+.ks-image1 {
+  height: 400px;
+  top: 10px;
+  left: -500px;
+}
+
+.image2 {
+  height: 400px;
+  top: 45px;
+  right: 30px;
+}
+.ks-image2 {
+  height: 400px;
+  top: 45px;
+  left: -250px;
+}
+.mobile-images-wrapper {
+  display: none;
+}
+
+
+
+
+/* ✅ Responsive Tablet */
+@media screen and (max-width: 992px) {
+
+  .solutions-container2{
+    height: 90px;
+  }
+  .Raitha-Sahaya {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .krishi-connect {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .mobile-app-img {
+    display: none;
+    text-align: center;
+  }
+
+  .raitha-content {
+    padding: 0;
+  }
+  .Krishi-connect {
+    padding: 1;
+  }
+
+  .raitha-content .solutions-title {
+    font-size: 32px;
+  }
+  .Krishi-connect .solutions-title {
+    font-size: 32px;
+  }
+
+  .raitha-content h4 {
+    font-size: 20px;
+  }
+  .Krishi-connect h4 {
+    font-size: 20px;
+  }
+
+  .raitha-content p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .Krishi-connect p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  /* ✅ Images move below and shrink */
+  .rs-app-img {
+    position: relative;
+    padding: 0;
+    margin: 20px 0;
+    max-width: 80%;
+  }
+  .ks-app-img {
+    position: relative;
+    padding: 0;
+    margin: 20px 0;
+    max-width: 80%;
+  }
+
+  .image1,
+  .image2 {
+    height: 220px;
+    top: auto;
+    right: auto;
+  }
+  .ks-image1,
+  .ks-image2 {
+    height: 220px;
+    top: auto;
+    right: auto;
+  }
+
+  .rs-app-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+  }
+  .ks-app-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+  }
+}
+
+/* ✅ Extra Small Screens */
+@media screen and (max-width: 600px) {
+  .solutions-container2{
+    height: 600px;
+  }
+  .raitha-content .solutions-title {
+    font-size: 26px;
+  }
+  .Krishi-connect .solutions-title {
+    font-size: 26px;
+  }
+
+  .raitha-content h4 {
+    font-size: 18px;
+  }
+  .Krishi-connect h4 {
+    font-size: 18px;
+  }
+  .raitha-content p {
+    font-size: 14px;
+  }
+  .Krishi-connect p {
+    font-size: 14px;
+  }
+
+  /* ✅ Reduce image size further */
+    .rs-app-img {
+      display: none;
+    position: relative;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 150px;
+  }
+  .ks-app-img {
+    display: none;
+  position: relative;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 150px;
+}
+  .mobile-app-img {
+    display: block;
+   
+  }
+
+  .mobile-images-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .rs-app-img {
+    display: none; /* Hide desktop floating images on mobile */
+  }
+  .ks-app-img {
+    display: none; /* Hide desktop floating images on mobile */
+  }
+
+  .mobile-images-wrapper img {
+    width: auto;
+    height: 120px;
+  }
+  .image1,
+  .image2 {
+    height: 120px;
+    width: auto;
+  }
+
+  .ks-image1,
+  .ks-image2 {
+    height: 120px;
+    width: auto;
+  }
+  .rs-app-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .ks-app-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,276 @@
+/* General Styling */
+body {
+  overflow-x: hidden;
+}
+
+.home-container {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f7f7f7;
+}
+
+.home-header {
+  font-size: 68px;
+  color: #4e674d;
+  font-weight: 900;
+}
+
+.home-description {
+  font-size: 40px;
+  color: #333;
+  margin-top: 20px;
+  max-width: 800px;
+  padding-bottom: 100px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.section-gap {
+  height: 150px;
+}
+
+.parallax-section {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.parallax-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* Content inside Image */
+.content-inside {
+  position: absolute;
+  background: rgba(78, 103, 77, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.top-content {
+  top: 30px;
+  right: 30px;
+}
+
+.bottom-content {
+  bottom: 30px;
+  right: 30px;
+}
+
+.content-inside h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.content-inside p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Vision and Mission */
+.vision-mission-section-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;        /* Forces children to stretch equal height */
+  padding: 50px 20px;
+  gap: 40px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vision-mission-box {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;               /* Makes internal content flexible */
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  min-height: 100%;            /* Ensures it stretches to match tallest sibling */
+}
+
+
+.vision-mission-box h2 {
+  font-size: 28px;
+  color: #4e674d;
+  margin-bottom: 20px;
+}
+
+.vision-mission-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Mobile-Only content shown outside image */
+.mobile-content {
+  display: none;
+  background: #4e674d;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.mobile-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mobile-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home-header {
+    font-size: 48px;
+  }
+
+  .home-description {
+    font-size: 28px;
+    padding-bottom: 50px;
+  }
+
+  .parallax-section {
+    min-height: 600px;
+  }
+
+  .content-inside {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-mission-section-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .vision-mission-box {
+    text-align: left;
+  }
+
+  .home-header {
+    font-size: 36px;
+  }
+
+  .home-description {
+    font-size: 22px;
+  }
+
+  .parallax-section {
+    min-height: 400px;
+  }
+
+  /* Show mobile content, hide inside image content */
+  .mobile-content {
+    display: block;
+  }
+
+  .content-inside {
+    display: none;
+  }
+}
+
+
+
+/* Video Section */
+.video-section {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+.video-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.video-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Aspect ratio 16:9 */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Responsive Video Section */
+@media screen and (max-width: 768px) {
+  .video-section {
+    padding: 15px;
+  }
+
+  .video-title {
+    font-size: 22px;
+  }
+
+  .video-description {
+    font-size: 16px;
+  }
+
+  .video-container {
+    padding-top: 60%; /* Adjust aspect ratio for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-section {
+    padding: 10px;
+  }
+
+  .video-title {
+    font-size: 20px;
+  }
+
+  .video-description {
+    font-size: 14px;
+  }
+
+  .video-container {
+    padding-top: 65%; /* Slightly taller aspect ratio */
+  }
+}
