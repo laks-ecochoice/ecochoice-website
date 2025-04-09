@@ -16,6 +16,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/solutions" element={<OurSolutions />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/?scrollTo=contact" element={<Gallery />} />
       </Routes>
       <Footer/>
     </Router>
